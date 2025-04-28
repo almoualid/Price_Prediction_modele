@@ -10,7 +10,7 @@ st.set_page_config(page_title="Prédiction Voiture", layout="wide")
 
 
 # Charger le modèle
-model = joblib.load("xgboost_modele_voiture2.pkl")
+model = joblib.load("xgboost_modele_voiture1.pkl")
 
 # Encoders
 le_pmain = joblib.load("le_pmain.pkl")
@@ -23,7 +23,7 @@ le_marque = joblib.load("le_marque.pkl")
 
 # Scaler
 try:
-    scaler = joblib.load("scaler_voiture2.pkl")
+    scaler = joblib.load("scaler_voiture1.pkl")
     use_scaler = True
 except:
     scaler = None
